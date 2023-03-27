@@ -191,7 +191,7 @@ header.head .misc {
   border-bottom: none;
   color:  rgba(var(--white-color), var(--hundred)) !important;
   font-family: 'Comfortaa';
-  text-shadow: 2px -2px 0px  rgba(var(--nick-cover), var(--hundred)), -2px 2px 0px  rgba(var(--nick-cover), var(--hundred)), -2px -2px 0px  rgba(var(--nick-cover), var(--hundred)), 2px 2px 0px  rgba(var(--nick-cover), var(--hundred)), 0px -2px 0px  rgba(var(--nick-cover), var(--hundred)), 0px 2px 0px  rgba(var(--nick-cover), var(--hundred)), 2px 0px 0px  rgba(var(--nick-cover), var(--hundred)), -2px 0px 0px  rgba(var(--nick-cover), var(--hundred));
+  text-shadow: 2px -2px 0  rgba(var(--nick-cover), var(--hundred)), -2px 2px 0  rgba(var(--nick-cover), var(--hundred)), -2px -2px 0  rgba(var(--nick-cover), var(--hundred)), 2px 2px 0px  rgba(var(--nick-cover), var(--hundred)), 0px -2px 0px  rgba(var(--nick-cover), var(--hundred)), 0px 2px 0px  rgba(var(--nick-cover), var(--hundred)), 2px 0px 0px  rgba(var(--nick-cover), var(--hundred)), -2px 0px 0px  rgba(var(--nick-cover), var(--hundred));
   font-size: 34px;
   line-height: 38px;
   pointer-events: none;
@@ -201,7 +201,7 @@ header.head .misc {
 header.head h2, header.head h1 {
   border-bottom: none;
   color:  rgba(var(--white-color), var(--hundred)) !important;
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   display: block;
 }
 
@@ -428,20 +428,16 @@ textarea {
   color:  rgba(var(--bright-color), var(--hundred));
 }
 
-.b-options-floated a:after, .b-options-floated .link:after {
-  display: none;
-}
-
 /* цвет кликабельных текстов на блоках как Авторы, Избранное и т.д. */
 /* Цвета шкал от темного до светлого - сверху вниз */
 .bar.simple .bar.s3 {
   background:  rgba(var(--small-rating), var(--hundred));
-    transition: 0.2s ease-out, -webkit-0.8s 0.2s ease-out, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s; 
+    transition: 0.2s ease-out, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s;
 }
 
 .bar.simple .bar.s2 {
   background:  rgba(var(--average-rating), var(--hundred));
-  transition: 0.2s ease-out, -webkit-0.8s 0.2s ease-out, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s; 
+  transition: 0.2s ease-out, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s;
 }
 
 .bar.simple .bar.s1 {
@@ -488,8 +484,8 @@ textarea {
   background: none;
   color:  rgba(var(--bright-color), var(--hundred));
   border: none !important;
-  margin-top: 0px;
-  transition: 0.1s ease, -webkit-0.8s 0.1s ease, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s!important;
+  margin-top: 0;
+  transition: 0.1s ease, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s!important;
 }
 
 .p-animes-show .other-names.click-loader:hover, .p-mangas-show .other-names.click-loader:hover, .p-ranobe-show .other-names.click-loader:hover {
@@ -698,6 +694,7 @@ textarea {
 }
 
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a {
+  font-size: 12px;
   color:  rgba(var(--bright-color), var(--hundred));
 }
 
@@ -710,7 +707,7 @@ textarea {
   border-radius: 10px;
   background-color: rgba(var(--block-color), 0.4) !important;
   border: none !important;
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -718,7 +715,7 @@ textarea {
 .b-form input[type=submit], .b-shiki_editor.previewed footer .unpreview, .b-poll .poll-actions .vote, .b-poll .poll-actions .abstain, a.stop.b-button, .b-button, .b-form .cancel, .b-button.preview, a.start.b-button, .b-form input[type=submit][disabled], .b-form input[type=submit].disabled, .block.edit-page.pages a.cancel, .b-shiki_editor footer .hide {
   padding: 7px 12px;
   line-height: 1;
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   color:  rgba(var(--light-color), var(--hundred)) !important;
   background-color: rgba(var(--block-color), 0.5);
   border-radius: 10px !important;
@@ -825,7 +822,7 @@ input {
 .b-block_list li {
   color:  rgba(var(--light-color), var(--hundred));
    transition: 0.1s ease-out, -webkit-0.1s ease-out, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s;
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
 }
 
 /* сводка по разным спискам  */
@@ -857,6 +854,8 @@ header.head h1 a.back:before, header.head h2 a.back:before {
 
 header.head a.misc:hover {
   color:  rgba(var(--hover-color), var(--hundred));
+  background-color: rgba(var(--hover-buttoms-2), 0.6);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 
@@ -1033,7 +1032,7 @@ tr.user_rate.selectable.editable:after {
 
 input, select, button, textarea {
   background-color: rgba(var(--block-color), 0.4);
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   border: none !important;
 }
 
@@ -1089,11 +1088,10 @@ input, select, button, textarea {
 
 .b-show_more-more .b-db_entry-note:first-child, .cc .b-db_entry-note:last-child, .block_m .b-db_entry-note:last-child, .b-comments .b-comment:last-child {
   border-bottom: none !important;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .p-dashboards-show .cc-news .c-news_topics .b-topic {
-  margin-bottom: 0px !important;
   margin: 10px 0px !important;
 }
 
@@ -1264,10 +1262,6 @@ input, select, button, textarea {
   font-size: 12px !important;
 }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a {
-  font-size: 12px;
-}
-
 .b-dialog .to_dialog {
   font-size: 12px !important;
   background: none !important;
@@ -1319,7 +1313,7 @@ input, select, button, textarea {
   margin-top: 0px;
 }
 
-.p-user_history-index .history-page .history-interval p .destroy, .buttons .item-reply, .buttons .item-moderation, .buttons .item-edit, .buttons .item-delete, .buttons .item-ignore, .buttons .item-apply, .buttons .item-request-confirm, .buttons .item-delete-confirm, .buttons .item-cancel, .buttons .item-request-reject, .buttons .item-delete-cancel, .buttons .item-moderation-cancel {
+.b-user_history-line .destroy, .buttons .item-reply, .buttons .item-moderation, .buttons .item-edit, .buttons .item-delete, .buttons .item-ignore, .buttons .item-apply, .buttons .item-request-confirm, .buttons .item-delete-confirm, .buttons .item-cancel, .buttons .item-request-reject, .buttons .item-delete-cancel, .buttons .item-moderation-cancel {
   color:  rgba(var(--bright-color), var(--hundred));
 }
 
@@ -1327,7 +1321,12 @@ input, select, button, textarea {
   font-size: 16px !important;
 }
 
-.buttons .item-ignore:hover, .buttons .item-delete:hover, .buttons .item-edit:hover, .buttons .item-reply:hover, .buttons .item-moderation:hover, .buttons .item-apply:hover, .buttons .item-request-confirm:hover, .buttons .item-delete-confirm:hover, .buttons .item-cancel:hover, .buttons .item-request-reject:hover, .buttons .item-delete-cancel:hover, .buttons .item-moderation-cancel:hover, .buttons .item-delete-confirm:hover {
+.buttons .item-ignore:hover, .buttons .item-delete:hover,
+.buttons .item-edit:hover, .buttons .item-reply:hover,
+.buttons .item-moderation:hover, .buttons .item-apply:hover,
+.buttons .item-request-confirm:hover, .buttons .item-delete-confirm:hover,
+.buttons .item-cancel:hover, .buttons .item-request-reject:hover,
+.buttons .item-delete-cancel:hover, .buttons .item-moderation-cancel:hover, .buttons .item-delete-confirm:hover {
   color:  rgba(var(--hover-color), var(--hundred)) !important;
 }
 
@@ -1343,7 +1342,7 @@ input, select, button, textarea {
 .b-video_player .cc-player_controls .episode-num .video-link a {
   color:  rgba(var(--dark-color), var(--hundred));
   cursor: pointer;
-  border-bottom: 1px dotted  rgba(var(--dark-color), var(--hundred));
+  border: none;
 }
 
 .b-video_player .cc-player_controls .create-user_rate .icon:before {
@@ -1365,10 +1364,6 @@ input, select, button, textarea {
   border-radius: 6px;
   padding: 0px 6px;
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
-}
-
-.b-video_player .cc-player_controls .episode-num .video-link a {
-  border: none;
 }
 
 .b-video_player .cc-player_controls .episode-num .video-link a:hover {
@@ -1528,9 +1523,8 @@ header.head .notice {
 }
 
 header.head a.misc {
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   font-size: 12px !important;
-  margin-bottom: 5px;
   background: rgba(var(--block-color), 0.4);
   padding: 5px 50px;
   border-radius: 14px;
@@ -1542,12 +1536,6 @@ header.head a.misc {
   display: block;
   width: max-content;
   text-transform: capitalize;
-}
-
-header.head a.misc:hover {
-  background-color: rgba(var(--hover-buttoms-2), 0.6);
-  color: #e4e4e4 !important;
-  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* надпись коллекция на зеленом */
@@ -1668,12 +1656,12 @@ time {
 
 
 
-.p-user_history-index .history-page .history-interval p a:hover {
+.b-user_history-line a:hover {
   color:  rgba(var(--hover-color), var(--hundred)) !important;
   font-weight: bold;
 }
 
-.p-user_history-index .history-page .history-interval p a {
+.b-user_history-line a {
   color:  rgba(var(--white-color), var(--hundred));
   font-weight: bold;
 }
@@ -1683,7 +1671,7 @@ body.localized_names-ru .name-ru:hover {
   text-decoration: none !important;
 }
 
-.p-user_history-index .history-page .history-interval p .date {
+.b-user_history-line .date {
   color:  rgba(var(--dark-color), var(--hundred)) !important;
 }
 
@@ -1775,6 +1763,7 @@ code.b-code_inline {
 }
 
 .b-options-floated a:after, .b-options-floated .link:after {
+  display: none;
   color:  rgba(var(--dark-color), var(--hundred));
   content: '/';
 }
@@ -1843,7 +1832,6 @@ code.b-code_inline {
 
 .b-bb_codes-examples .example .textarea {
   background: rgba(var(--block-color), 0.4);
-  border: rgba(var(--block-color), 0.4);
   color:  rgba(var(--light-color), var(--hundred));
   border: none !important;
   border-radius: 8px;
@@ -1872,10 +1860,6 @@ code.b-code_inline {
   line-height: 12px;
   margin-left: 3px;
   margin-bottom: 3px;
-}
-
-.b-bb_codes-examples .result a:hover {
-  color:  rgba(var(--hover-color), var(--hundred));
 }
 
 .b-bb_codes-examples .example span:after {
@@ -1917,9 +1901,8 @@ body.localized_names-ru .name-ru {
 }
 
 .p-profiles .profile-head .c-history .entry, .p-topics .l-menu .reviews .entry, .p-topics .l-menu .clubs .entry {
-  padding-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px 3px 0px;
+  margin-bottom: 0;
+  padding: 0 3px 0;
   transition: 0.2s ease, -webkit-0.2s ease, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s, background 0s;
   border-top: none;
   text-decoration: none !important;
@@ -1996,7 +1979,6 @@ body.localized_names-ru .name-ru:before {
   position: absolute;
         top: 0;
   right: 10px !important;
-  margin-left: 240px;
     background: linear-gradient(270deg, rgba(var(--dark-color), var(--hundred)), rgba(var(--dark-color), 0.3));
     width: 8px;
     margin: 10px 1px;
