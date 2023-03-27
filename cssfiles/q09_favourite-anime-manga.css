@@ -140,8 +140,8 @@
  }
  #profiles_show .cc-favourites .c-column.c-person {
   display: none !important;
-    
  } /*убрать только Людей*/
+
  .p-profiles .cc-favourites .c-anime .cover .image-decor::before,
  .p-profiles .cc-favourites .c-manga .cover .image-decor::before {
   content: "";
@@ -151,7 +151,6 @@
   left: 0;
   top: 0;
   z-index: 99;
-  opacity: 1;
   color: #f0f8ff;
   white-space: nowrap;
   background: transparent;
@@ -254,4 +253,14 @@
  .p-profiles-show .user_rates-minified .b-catalog_entry.rewatching .image-decor::after {
   background-color: rgb(31 111 106 / 90%);
  }
+}
+@media screen and (max-width: 1200px) {
+  .p-profiles .cc-favourites .c-anime a .image-decor::before,
+  .p-profiles .cc-favourites .c-anime a .image-cutter::before,
+  .p-profiles .cc-favourites .c-manga a .image-decor::before,
+  .p-profiles .cc-favourites .c-manga a .image-cutter::before,
+  .p-profiles .cc-favourites .c-character a .image-cutter::before,
+  .p-profiles .cc-favourites .c-character a .image-decor::before {
+    font-size: 0;
+  }
 }
